@@ -16,11 +16,12 @@
        font-family: Roboto, sans-serif;
        letter-spacing: 0.03em;
       
-       margin: 0%;} 
+       margin: 0px;} 
 /* current */
 .header-nav .header-link.current {color: var(--brand-color);} 
 
 .header-list .header-link.current {color: var(--brand-color);}
+
 /* logo */
 .header-logo,
 .fooer-logo {color: var(--brand-color);
@@ -60,7 +61,9 @@
 .publicity-list,
 .works-images,
 .team-list,
-.footer-list {list-style-type: none;}
+.footer-list {list-style-type: none;
+              padding: 0px;
+              margin: 0px;}
 /* team  */
 .team {background-color: var(--secondary-fill-color);}
 /*button*/
@@ -71,7 +74,11 @@
          font-weight: 700;
          font-size: 16px;
          line-height: 1.87;
-         letter-spacing: 0.06em;}
+         letter-spacing: 0.06em;
+         display: inline-block;
+         border-radius: 4px;
+         padding: 10px 32px;
+         text-align: center;}
 
 .button:hover {background-color: var(--button-color);}       
 /*hero*/
@@ -82,40 +89,59 @@
              font-size: 44px;
              line-height: 1.36;
              letter-spacing: 0.06em;
-             text-align: center;}
-.hero {background-color: var( --light-black-color);}
+             
+
+        
+             margin-top: 0px;
+             margin-bottom: 30px;}
+.hero {background-color: var( --light-black-color);
+       text-align: center;
+       margin-bottom: 94px;}
 /* publicity */
 .publicity-caption {color: var(--black-color);
                   text-transform: uppercase;
                   font-weight: 700;            
                   font-size: 14px;             
-                  line-height: 1.14;}
+                  line-height: 1.14;
+                  margin-top: 0px;
+                  margin-bottom: 10px;}
 
 .publicity-text {color: var(--basc-text-color);
       font-weight: 400;
       font-size: 14px;
-      line-height: 1.71;} 
+      line-height: 1.71;
+      margin-top: 0px;
+      margin-bottom: 94px;} 
 
     /* team */ 
 
+.work-item {margin-bottom: 188px;}
 .works-title,
 .team-title {color: var(--black-color);
              font-weight: 700; 
              font-size: 36px; 
              line-height: 1.17; 
-             text-align: center;}
+             text-align: center;
+             margin-top: 0px;
+             margin-bottom: 50px;}
 
 .team-images {background-color: var(--wite-color);}
+.team-img {margin-top: 0px;
+           margin-bottom: 30px;}
 .team-item {color: var(--black-color);
       font-weight: 500;
       font-size: 16px;
       line-height: 1.19;
-      text-align: center;} 
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 10px;} 
 
 .team-text {font-weight: 400;
             font-size: 16px;
             line-height: 1.19;
             text-align: center;}
+.team {margin-top: 0px;
+       margin-bottom: 94px;}
 /* footer */
 .footer-section {background-color: var(--light-black-color);
                  color: var(--wite-color);}  
@@ -144,7 +170,10 @@
                 font-family: inherit;
                 font-weight: 500;
                 font-size: 16px;
-                line-height: 1.62;}
+                line-height: 1.62;
+                display: inline-block;
+                border-radius: 4px;
+                padding: 6px 22px;}
 .filter-buttom:hover {background-color: var(--brand-color);
                       color: var(--wite-color);}
 
@@ -163,9 +192,12 @@
               line-height: 1.87;}   
 
 .filter-img {list-style-type: none;}
+.conteiner {margin-left: auto;
+            margin-right: auto;
+            width: 1200;
+            outline: 2px dashed tomato;}
 
-
-
+       
 
 
  
