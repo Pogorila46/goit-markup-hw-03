@@ -10,7 +10,8 @@
        --secondary-text-color: rgba(255,255,255,0.6);
        --button-color: #188CE8;
        --button-portfolio-fill: #F5F4FA;
-       --borders-line:#ECECEC;}
+       --borders-line: #ECECEC;
+       --border-line-img: #EEEEEE;}
 
        /*   reset  */
 body {  margin: 0px;
@@ -18,11 +19,7 @@ body {  margin: 0px;
        font-family: Roboto, sans-serif;
        letter-spacing: 0.03em;} 
 
-html {box-sizing: border-box;}       
 
-*,
-*::before,
-*::after {box-sizing: inherit;}
 
 h1,
 h2,
@@ -46,7 +43,7 @@ img {display: block;}
 
 /*  header  */  
 
-.wrapper {width: 1200;
+.wrapper {width: 1200px;
          padding-right: 15px;
          padding-left: 15px;
          margin-right: auto;
@@ -111,8 +108,7 @@ img {display: block;}
 
 .list-link { display: flex;
              margin-top: 32px;
-             margin-bottom: 32px;
-             align-items: center;}
+             margin-bottom: 32px;}
 
 .header-link {color: var(--black-color);
               text-decoration: none;
@@ -192,7 +188,8 @@ img {display: block;}
       font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
-      margin-top: 0px;}     
+      margin-top: 0px;
+      box-sizing: border-box;}     
 
 .publicity-list .publicity-item {flex-basis: calc(100%-4*30/4);}
 
@@ -281,6 +278,7 @@ img {display: block;}
           /* buttons */
 
 .filter-buttom {display: inline-block;
+                border: 1px solid #EEEEEE;
                 border-radius: 4px;
                 padding: 6px 22px;
                 background-color: var(--button-portfolio-fill);
@@ -294,8 +292,15 @@ img {display: block;}
 .filter-buttom:hover {background-color: var(--brand-color);
                       color: var(--wite-color);}
 
-.filter-list {
-              flex-wrap: wrap;} 
+.filter-img {display: flex;
+             flex-wrap: wrap;}
+
+.filter-list .filter-item {margin-bottom: 34px;}
+                                
+
+.filter-list {display: flex;
+              justify-content: center;
+              } 
 
 .filter-list .filter-item + .filter-item {margin-left: 8px;}             
 
