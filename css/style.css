@@ -11,7 +11,7 @@
        --button-color: #188CE8;
        --button-portfolio-fill: #F5F4FA;} 
 
- body {
+body {
        color: var(--basc-text-color);
        font-family: Roboto, sans-serif;
        letter-spacing: 0.03em;
@@ -26,25 +26,50 @@ h6,
 p{margin-top: 0px;
   margin-bottom: 0px;} 
 
-.list {list-style-type: none;}  
-.link {text-decoration: none;}     
-/* current */
-.header-nav .header-link.current {color: var(--brand-color);} 
+ul,
+ol {margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;}
 
+.list {list-style-type: none;}  
+.link {text-decoration: none;}  
+/*  header  */  
+
+               /* current */
+.header-nav .header-link.current {color: var(--brand-color);} 
 .header-list .header-link.current {color: var(--brand-color);}
 
-/* logo */
+               /* logo */
 .header-logo,
-.footer-logo {color: var(--brand-color);
+.footer-logo {
+              color: var(--brand-color);
               font-family: Raleway, sans-serif;
               font-weight: bold;
               font-size: 26px;
               line-height: 1.19;}
-
+.header-logo {margin-top: 24px;
+              margin-right: 93px;
+              margin-bottom: 25px;}
 .footer-brand {color: var(--wite-color);}                       
 .header-brand {color: var(--logo-text-color);
-                font-family: Raleway, sans-serif;}                
-/* link*/
+                font-family: Raleway, sans-serif;}     
+.site-nav {margin-right: 331px;}
+                /* link*/
+
+.main-nav {display: flex;
+           align-items: center;
+           justify-content: baseline;}
+           
+.header-nav {margin-top: 32px;
+             display: flex;}
+
+.header-nav .header-list:not(:last-child) {margin-right: 50px;}
+
+.contact-links {justify-content: center;}
+.list-link .link-item + .link-item {margin-left: 50px;}
+.list-link {margin-top: 32px;
+            margin-bottom: 32px;
+            display: flex;}
 .header-link {color: var(--black-color);
               text-decoration: none;
               font-weight: 500;
@@ -59,12 +84,21 @@ p{margin-top: 0px;
       line-height: 16px;
       letter-spacing: 0.02em;}
 
- .header-link:hover,
- .header-link:focus,
- .header-link:active,
- .contact:hover,
- .contact:focus {color: var(--brand-color);} 
- 
+.header-nav,
+.list-link,
+.publicity-list,
+.works-images,
+.team-list,
+.contact-links,
+.site-nav,
+.header {display: flex;}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active,
+.contact:hover,
+.contact:focus {color: var(--brand-color);} 
+
 /* team  */
 .team {background-color: var(--secondary-fill-color);}
 /*button*/
@@ -99,7 +133,6 @@ p{margin-top: 0px;
        text-align: center;
        padding-top: 200px;
        padding-bottom: 200px;
-       margin-bottom: 94px;
       outline: 2px dotted crimson;}
 /* publicity */
 .publicity-caption {color: var(--black-color);
@@ -114,15 +147,15 @@ p{margin-top: 0px;
       font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
-      margin-top: 0px;} 
-.publicity,
-.works,
-.team {margin-bottom: 94px;
-        margin-top: 94px;}      
+      margin-top: 0px;}     
 
+.publicity {padding-top: 94px;
+            padding-bottom: 95px;}      
     /* team */ 
-.works {outline: 2px dashed chartreuse;}
-.work-item {margin-bottom: 188px;}
+.works {outline: 2px dashed chartreuse;
+        padding-top: 94px;
+        padding-bottom: 94px;}
+        
 .works-title,
 .team-title {color: var(--black-color);
              font-weight: 700; 
@@ -149,11 +182,13 @@ p{margin-top: 0px;
             text-align: center;}
 .team {margin-top: 0px;
       padding-top: 94px;
-       pading-bottom: 94px;
+       padding-bottom: 94px;
       outline: 2px solid rgb(59, 51, 99);}
 /* footer */
 .footer-section {background-color: var(--light-black-color);
-                 color: var(--wite-color);}  
+                 color: var(--wite-color);} 
+.footer-section {padding-top: 60px;
+         padding-bottom: 60px;}
                  
 .footer-link {color: var(--secondary-text-color) ;
               text-decoration: none;
@@ -184,7 +219,10 @@ p{margin-top: 0px;
 .filter-buttom:hover {background-color: var(--brand-color);
                       color: var(--wite-color);}
 
-.filter-list {list-style-type: none;} 
+.filter-list {list-style-type: none;
+              display: flex;} 
+.filter-list .filter-item + .filter-item {margin-left: 8px;}             
+
 
 .filter-item {background-color: #FFFFFF;}
 
@@ -198,11 +236,8 @@ p{margin-top: 0px;
               font-size: 16px;
               line-height: 1.87;}   
 
-.filter-img {list-style-type: none;}
-.conteiner {margin-left: auto;
-            margin-right: auto;
-            width: 1200;
-            outline: 2px dashed tomato;}
+
+
 
        
 

@@ -15,34 +15,37 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <header class="header">
-        <!--Навигация-->
-        <nav>
-            <a href="./index.html" class="header-logo">
-             Web<span  class="header-brand">Studio</span>   
-            </a>
-            <ul class="header-nav">
-                <li class="header-list">
-                    <a href = "./index.html" class="header-link">Студия</a> 
-                 </li>
-                <li>
-                    <a href="./portfolio.html" class= "header-link current">Портфолио</a>
-                </li>
-                <li>
-                    <a href="" class= "header-link">Контакты</a>
-                 </li>
-            </ul>
-         </nav>
-        <ul class="list-link">
-            <li>
-                <a href="mailtu:info@devstudio.com"  class="link" target="_blank">info@devstudio.com</a>
+<header class="header">
+    <!--Навигация-->
+
+    <nav class="site-nav">
+        <a href="./index.html" class="header-logo link">
+            Web<span class="header-brand">Studio</span>
+        </a>
+        <ul class="header-nav list">
+            <li class="header-list">
+                <a href="./index.html" class="header-link link current">Студия</a>
             </li>
-            <li>
-                <a href = "tel:+380961111111"  class="link">+38 096 111 11 11</a>
+            <li class="header-list">
+                <a href="./portfolio.html" class="header-link link">Портфолио</a>
+            </li>
+            <li class="header-list">
+                <a href="" class="header-link">Контакты</a>
             </li>
         </ul>
-     
-    </header>  
+    </nav>
+    <div class="contact-links">
+        <ul class="list-link list">
+            <li class="link-item">
+                <a href="mailtu:info@devstudio.com" class="contact link" target="_blank">info@devstudio.com</a>
+            </li>
+            <li class="link-item">
+                <a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+
+</header>
     <main>
         <!--фильтр-->
         <section  class="filter">
@@ -64,7 +67,7 @@
             <button type="button" class="filter-buttom">Маркетинг</button>
            </li>
         </ul>
-        <ul class="filter-img">
+        <ul class="filter-img list">
          <li class="filter-item">
              <img src="./images/tehnokrjak.jpg" alt="страничка сайта в ноутбуке"  width="370"  height="294">
              <h2 class="button-title">Технокряк</h2>
